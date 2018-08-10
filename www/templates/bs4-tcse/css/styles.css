@@ -1,0 +1,224 @@
+ /* Template created by tcse-cms.com | Author: Vitaly V. Chuyakov | URL: http://tcse-cms.com */
+ 
+ .h1,
+ h1 {
+     font-size: 30px;
+ }
+
+#dle-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+/* ============================================================== */
+/* Переназначение стилей DLE */
+/* ============================================================== */
+ .ui-dialog-buttonset button {
+     display: inline-block;
+     margin-bottom: 0;
+     margin-left: 5px;
+     font-weight: normal;
+     text-align: center;
+     border: 1px solid transparent;
+     white-space: nowrap;
+     padding: 6px 12px;
+     font-size: 14px;
+     line-height: 1.42857143;
+     border-radius: 4px;
+     color: #555555;
+     background-color: #ffffff;
+     border-color: rgba(0, 0, 0, 0.1);
+ }
+
+/* Изменения между версиями движка https://dle-news.ru/extras/diffs/ */
+.instagram-media, .twitter-tweet {display: inline-block !important;}
+
+
+/* ============================================================== */
+/* многоуровневое меню для DLE тега {catmenu} */
+/* ============================================================== */
+#primary_nav_wrap {
+    margin-top: 15px; 
+    /* z-index: 1500; */
+}
+
+#primary_nav_wrap ul {
+    list-style: none;
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 10px;
+}
+
+#primary_nav_wrap ul a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 32px;
+    padding: 0 15px;
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*#primary_nav_wrap ul a:hover {color: #fff;}
+#primary_nav_wrap ul:hover {color: #fff;}*/
+
+#primary_nav_wrap ul li {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+    /* z-index: 1500; */
+}
+
+#primary_nav_wrap ul li.current-menu-item {
+    background: rgba(35, 82, 124, 0.46);
+    color: #fff;
+}
+
+#primary_nav_wrap ul li:hover {
+    background: rgba(35, 82, 124, 0.46);
+    color: #fff;
+}
+
+#primary_nav_wrap ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    padding: 0;
+    border: solid 1px #ccc;
+    z-index: 1500;
+}
+
+#primary_nav_wrap ul ul li {
+    float: none;
+    width: 260px;
+}
+
+#primary_nav_wrap ul ul a {
+    line-height: 120%;
+    padding: 10px 15px;
+}
+
+#primary_nav_wrap ul ul ul {
+    top: 0;
+    left: 100%;
+}
+
+#primary_nav_wrap ul li:hover > ul {
+    display: block;
+}
+
+
+
+/* ============================================================== */
+/* основной шаблон main.tpl */
+/* ============================================================== */ 
+
+ /*логотип сайта*/
+ .header-logo {
+     margin: 10px 0;
+ }
+
+ /*подвал сайта */
+ .bg-footer a {
+    color: #fff;
+ }
+
+/* ============================================================== */
+/* краткая новость, шаблон shortstory.tpl */
+/* ============================================================== */
+ .short-news-img {
+     width: 100%;
+     height: 200px;
+     overflow: hidden;
+ }
+/* ============================================================== */
+/* полная новость, шаблон fullstory.tpl */
+/* ============================================================== */
+ .full-content img {
+     max-width: 100%;
+ }
+ 
+ .block-rating {
+     padding: 10px 0;
+ }
+ 
+/* ============================================================== */
+/* комментарии, шаблон comments.tpl */ 
+/* ============================================================== */
+ .smartcomments img {
+     max-width: 100%;
+ }
+
+ /*облако тегов*/ 
+ .tagcloud a {
+     line-height: 36px;
+     position: relative;
+     font-size: 12px;
+     margin: 0 5px 5px 5px;
+     padding: 8px 7px;
+     color: #7a7a7a;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     text-decoration: none;
+ }
+ 
+ .tagcloud a:hover {
+     color: #fff;
+     background-color: #287ae9;
+ }
+ 
+ .clouds_xsmall {
+     display: inline-block;
+ }
+ 
+ @media (min-width: 320px) and (max-width: 640px) {
+     /* если ширина экрана от 320px до 640px */
+     .tagcloud2 a {
+         line-height: 36px;
+         position: relative;
+         font-size: 12px;
+         margin: 0 5px 5px 5px;
+         padding: 8px 7px;
+         color: #7a7a7a;
+         border: 0px solid #ccc;
+         background-color: #ccc;
+         color: #000;
+         border-radius: 5px;
+         text-decoration: none;
+     }
+     .tagcloud2 a:hover {
+         color: #fff;
+         background-color: #287ae9;
+     }
+     .tagcloud2 {
+         color: #fff;
+     }
+ }
+
+/* ============================================================== */
+/* Доп-поля профиля юзера в шаблоне userinfo.tpl */
+/* ============================================================== */
+.profile-xfields {
+    font-weight: bold;
+}
+.profile-xfields input {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+.profile-xfields textarea {
+    width: 100%;
+    height: 186px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
