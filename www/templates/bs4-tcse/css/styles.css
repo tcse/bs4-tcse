@@ -1,10 +1,6 @@
  /* Template created by tcse-cms.com | Author: Vitaly V. Chuyakov | URL: http://tcse-cms.com */
- 
- .h1,
- h1 {
-     font-size: 30px;
- }
 
+/* Переход на flex систему разметки в BS4 - фикс для вставки контента DLE */
 #dle-content {
     display: -webkit-box;
     display: -ms-flexbox;

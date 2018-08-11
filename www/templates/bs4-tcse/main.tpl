@@ -12,12 +12,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{THEME}/assets/bootstrap-4.1.3/css/bootstrap.min.css" media="screen" title="default">
 
-    {* <link rel="alternate stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/sketchy/bootstrap.min.css" title="sketchy" media="screen" /> *}
-
-    {* <link rel="alternate stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/cerulean/bootstrap.min.css" title="cerulean" media="screen" /> *}
-
-    {* <link rel="alternate stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/materia/bootstrap.min.css" title="materia" media="screen" /> *}
-
     {* DLE style *}
     <link rel="stylesheet" href="{THEME}/css/engine.css">
     <link rel="stylesheet" href="{THEME}/css/styles.css">
@@ -38,10 +32,10 @@
             </div>
         </div>
         {* Главное меню в шапке сайта *} 
-        {* {include file="custom/menu_header.tpl"} *} {* / Главное меню в шапке сайта *}
+        {* {include file="custom/menu/menu_header.tpl"} *} {* / Главное меню в шапке сайта *}
 
         {* Альтернатива Главное меню в шапке сайта *} 
-            {include file="custom/menu_header_auto.tpl"} 
+            {include file="custom/menu/menu_header_auto.tpl"} 
         {* / Альтернатива меню в шапке сайта *}
     </header>
 
@@ -89,7 +83,7 @@
 
     <footer>
         {* Блок меню в подвале сайта *} 
-        {include file="custom/menu_footer.tpl"} {* /Блок меню в подвале сайта *}
+        {include file="custom/menu/menu_footer.tpl"} {* /Блок меню в подвале сайта *}
         <div class="container">
             <div class="row">
                 {* Блок копирайтов в подвале сайта *}
@@ -101,7 +95,7 @@
                         Список компонентов <a href="/demo-components.html">bootstrap</a>
                     </p>
                     <p>
-                        В основе фреймворк <a href="http://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank">twitter bootstrap 4</a> и набор иконок <a href="http://fontawesome.io/icons/" target="_blank">fontawesome</a>.
+                        В основе фреймворк <a href="http://getbootstrap.com/docs/4.1/getting-started/introduction/" target="_blank">twitter bootstrap 4</a> и набор иконок <a href="http://fontawesome.io/icons/" target="_blank">fontawesome</a>.
                     </p>
                     <p>
                         Дополнительные шаблоны <a href="https://bootswatch.com/" target="_blank">bootswatch.com</a> и CDN <a href="https://www.bootstrapcdn.com/bootswatch/" target="_blank">bootstrapcdn.com</a>
