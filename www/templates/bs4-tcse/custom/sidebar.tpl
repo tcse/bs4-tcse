@@ -73,52 +73,31 @@
 <div class="card border-danger mb-3">
 	<div class="card-header">
 		<h5 class="card-title">
-			Переключить стиль
+			Цветовая схема
 		</h5>
 	</div>
 	<div class="card-body">
-		
-		{* <!-- Setting Options -->
-	        <div id="color-switcher-content">
 
-	            <h3>Цветовая схема</h3>
-	            <a href="#" rel="theme2.css" class="color">sketchy</a>
-	            <a href="#" rel="theme3.css" class="color ">cerulean</a>
-	            <a href="#" rel="theme4.css" class="color ">materia</a>
+        <div id="color-switcher-content">
+        	<a href="?style=theme1" rel="theme1" class="styleswitch btn btn-info btn-block">стандартная</a>
+            <a href="?style=theme2" rel="theme2" class="styleswitch btn btn-info btn-block">sketchy</a>
+            <a href="?style=theme3" rel="theme3" class="styleswitch btn btn-info btn-block">cerulean</a>
+            <a href="?style=theme4" rel="theme4" class="styleswitch btn btn-info btn-block">materia</a>
 
-	        </div>
-	    <!-- color-switcher --> *}
+            <a href="?style=theme5" rel="theme5" class="styleswitch btn btn-info btn-block">cosmo</a>
+            <a href="?style=theme6" rel="theme6" class="styleswitch btn btn-info btn-block">darkly</a>
+            <a href="?style=theme7" rel="theme7" class="styleswitch btn btn-info btn-block">lux</a>
+            <a href="?style=theme8" rel="theme8" class="styleswitch btn btn-info btn-block">cyborg</a>
+            <a href="?style=theme9" rel="theme9" class="styleswitch btn btn-info btn-block">flatly</a>
+            <a href="?style=theme10" rel="theme10" class="styleswitch btn btn-info btn-block">journal</a>
+            <a href="?style=theme11" rel="theme11" class="styleswitch btn btn-info btn-block">litera</a>
+            <a href="?style=theme12" rel="theme12" class="styleswitch btn btn-info btn-block">lumen</a>
+            <a href="?style=theme13" rel="theme13" class="styleswitch btn btn-info btn-block">minty</a>
+            <a href="?style=theme14" rel="theme14" class="styleswitch btn btn-info btn-block">pulse</a>
+			
 
-
-
-	    <div id="color-switcher-content">
-            <h3>Color Selector</h3>
-            	<a href="#" rel="theme2.css" class="color">sketchy</a>
-	            <a href="#" rel="theme3.css" class="color ">cerulean</a>
-	            <a href="#" rel="theme4.css" class="color ">materia</a>
-            <a href="#" rel="theme2.css" class="color default">default</a>
-            <a href="#" rel="color-niceblue.css" class="color niceblue">niceblue</a>
-            <a href="#" rel="color-intenseblue.css" class="color intenseblue">intenseblue</a>
-            <a href="#" rel="color-otherblue.css" class="color otherblue">otherblue</a>
-            <a href="#" rel="color-blue.css" class="color blue">blue</a>
-            <a href="#" rel="color-puregreen.css" class="color puregreen">puregreen</a>
-            <a href="#" rel="color-grassgreen.css" class="color grassgreen">grassgreen</a>
-            <a href="#" rel="color-green.css" class="color green">green</a>        
-            <a href="#" rel="color-olive.css" class="color olive">olive</a>
-            <a href="#" rel="color-gold.css" class="color gold">gold</a>
-            <a href="#" rel="color-orange.css" class="color orange">orange</a>
-            <a href="#" rel="color-pink.css" class="color pink">pink</a>
-            <a href="#" rel="color-fuchsia.css" class="color fuchsia">fuchsia</a>
-            <a href="#" rel="color-violet.css" class="color violet">violet</a>
-            <a href="#" rel="color-red.css" class="color red">red</a>
-            
-
-            <h3>Container Selector</h3>
-            <div class="btn-group">
-                <button href="#" class="option btn btn-sm btn-primary" rel="width-boxed.css">Boxed</button>
-                <button href="#" class="option btn btn-sm btn-primary" rel="width-full.css">Full Width</button>
-            </div>
         </div>
+
 
 	</div>
 </div>
