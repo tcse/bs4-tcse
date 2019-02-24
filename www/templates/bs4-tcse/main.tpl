@@ -27,9 +27,14 @@
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/minty/bootstrap.min.css" title="theme13" rel="alternate stylesheet" type="text/css" media="screen" />
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/pulse/bootstrap.min.css" title="theme14" rel="alternate stylesheet" type="text/css" media="screen" />
 
+    <link href="{THEME}/assets/OwlCarousel2-2.3.4/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="{THEME}/assets/OwlCarousel2-2.3.4/css/owl.theme.default.min.css" rel="stylesheet">
+
     {* DLE style *}
     <link href="{THEME}/css/engine.css" rel="stylesheet">
     <link href="{THEME}/css/styles.css" rel="stylesheet">
+
+    
 </head>
 
 <body>
@@ -131,6 +136,7 @@
     {AJAX}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="{THEME}/assets/bootstrap-4.1.3/js/bootstrap.min.js"></script>
+    <script src="{THEME}/assets/OwlCarousel2-2.3.4/js/owl.carousel.min.js"></script>
     <script src="{THEME}/js/libs.js"></script>
     {* {include file="js/javascript.tpl"} *}
 
