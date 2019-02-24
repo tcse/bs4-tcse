@@ -11,10 +11,35 @@ $('#SeachModal').on('shown.bs.modal', function() {
     $('#focusedInput').focus();
 })
 
+/*
+ * АКтивация плагина owlCarousel
+ */
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+    }
+})
+
 
 /*
  * КОСТЫЛИ для BS4
  */
 // $('#dle-content').addClass('row align-items-start') // добавление класса row к id dle-content
 // $('li.page-item').addClass('page-link') // добавление класса page-link к a для li page-item
+
 
