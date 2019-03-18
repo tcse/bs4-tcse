@@ -33,9 +33,9 @@
 
 						[rating-type-3]
 						<ul class="list-inline">
-							<li class="list-inline-item">[rating-minus]<i class="fa fa-thumbs-o-down"></i>[/rating-minus]</li>
+							<li class="list-inline-item">[rating-plus]<i class="fa fa-thumbs-o-up fa-4x"></i>[/rating-plus]</li>
 							<li class="list-inline-item">{rating}</li>
-							<li class="list-inline-item">[rating-plus]<i class="fa fa-thumbs-o-up"></i>[/rating-plus]</li>
+							<li class="list-inline-item">[rating-minus]<i class="fa fa-thumbs-o-down fa-4x"></i>[/rating-minus]</li>
 						</ul>
 						[/rating-type-3]
 					</li>
@@ -57,7 +57,7 @@
 	</article>
 
 
-	<section class="mb-5">
+	<section class="w-100 mb-5">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 			<div class="card">
 				<div class="card-header">Реклама на сайте</div>
