@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
 <head>
 <meta content="text/html; charset={charset}" http-equiv="Content-Type" />
+<link href="{THEME}/assets/DLE/css/132/offline.css" type="text/css" rel="stylesheet">
 <style type="text/css">
 body{ 
 	font: 12px/16px Arial, Helvetica, Tahoma, sans-serif;
