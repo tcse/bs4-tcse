@@ -2,41 +2,12 @@
 <div class="col-12 col-sm-6 col-md-12 col-lg-6">
 
     <div class="card">
-
-        {* <div class="card-header text-center">
-            <div class="d-lg-block">
-                <h3 class="card-title">{title limit="40"}</h3>
-
-                <a href="{full-link}" class="d-lg-none d-none">
-                    <h2>{title}</h2>
-                </a>
-            </div>
-        </div> *}
-
-        <img class="card-img-top img-fluid" src="{image-1}" alt="{title}">
-
+        <a href="{full-link}">
+            <img class="card-img-top img-fluid" src="{image-1}" alt="">
+        </a>
         <div class="card-body">
             
-
-            [image-1]
-            {* <div class="d-lg-block short-news-img">
-                <a href="{full-link}"><img src="{image-1}" class="rounded img-fluid" alt="" /></a>
-            </div> *}
-
-            {* <div class="d-sm-block d-md-block">
-                <a href="{full-link}"><img src="{image-1}" class="rounded img-responsive col-sm-3" alt="" /></a>
-            </div> *}
-
-           {*  <div class="d-xs-block col-12">
-                <p>
-                    <a href="{full-link}">
-                        <center><img src="{image-1}" class="rounded img-responsive" alt="" /></center>
-                    </a>
-                </p>
-            </div> *}
-            [/image-1]
-
-            <h5 class="card-title">{title limit="40"}</h5>
+            <h5 class="card-title">{title}</h5>
 
             <p class="card-text">
                 {short-story limit="300"}... [edit]
