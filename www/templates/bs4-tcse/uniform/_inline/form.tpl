@@ -1,6 +1,6 @@
 {* 
 	Для вывода формы используем код:
-	<div data-uf-inline="/engine/ajax/uniform/uniform.php" data-uf-settings='{"formConfig": "inline"}'>
+	<div data-uf-inline="/engine/ajax/uniform/uniform.php" data-uf-settings='{"formConfig": "_inline"}'>
 		<div class="uf-inline-loading"></div>
 	</div>
 *}

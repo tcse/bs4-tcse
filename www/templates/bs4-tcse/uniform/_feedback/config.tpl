@@ -16,7 +16,7 @@
 // radioFields      — Поля типа radio
 // sendAsPlain      — Отправлять сообщение как простой текст
 // sendToAuthor     — Отправить письмо автору новости, если есть newsId есть поле с name="newsId" и если автор разрешил получение писем с сайта (false)
-// sendToSender     — Отправлять письмо так же на email, указанный в поле email (false) 
+// sendToSender     — Отправлять письмо так же на email, указанный в поле email (false)
 // allowAttachments — Разрешить прикрепление файлов (false)
 // maxFileSize      — Максимальный размер загружаемого файла (в килобайтах)
 // allowedFileTypes — Разрешенные типы файлов, перечисляем расширения через запятую, без точек и пробелов
@@ -24,10 +24,11 @@
 // -------------------------------------------
 
 
-templateFolder = callback
+templateFolder = _feedback
 // nocache = y
 // debug = y
-required = phone
-selectFields = calltime
+required = textarea, email
+// hidden = newsid,user
 sendmail = y
-emails = mail@mail.ru
+sendToSender = y
+emails = mail@mail.ru, mail2@mail.ru

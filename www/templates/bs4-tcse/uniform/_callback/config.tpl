@@ -23,10 +23,11 @@
 // parseSendMail    — Путь к php файлу, который будет подключен для обработки данных перед отправкой email
 // -------------------------------------------
 
-templateFolder = inline
+
+templateFolder = _callback
 // nocache = y
 // debug = y
-required = textarea, email
-// hidden = newsid,user
+required = phone
+selectFields = calltime
 sendmail = y
-emails = mail@mail.ru, mail2@mail.ru
+emails = mail@mail.ru
