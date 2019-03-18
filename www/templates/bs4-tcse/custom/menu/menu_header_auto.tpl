@@ -18,7 +18,7 @@
         </div>  *}{* /Блок кнопок в шапке меню на малых экранах *}
 
         {* Блок кнопок в шапке меню на малых экранах *}
-        <a class="navbar-brand" href="/">BS4-TCSE</a>
+        <a class="navbar-brand" href="/"><i class="fa fa-home"></i></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu_header_auto" aria-controls="bs-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button> {* /Блок кнопок в шапке меню на малых экранах *}

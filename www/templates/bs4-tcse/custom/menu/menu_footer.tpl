@@ -1,6 +1,17 @@
-<div class="p-5 mb-5 bg-secondary text-white bg-footer">
+<div class="p-5 mb-5 bg-light">
 	<div class="container">
 		<div class="row">
+
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<h4>Автоматическое меню сайта (все разделы)</h4>
+				<ul class="list-inline">
+					{catmenu id="1-50" subcat="yes" template="custom/categorymenu/footer_item"}
+				</ul>
+			</div>
+
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<h4>Меню сайта (наполнено вручную)</h4>
+			</div>
 			<div class="col-md-3 col-sm-6 col-xs-6">
 				<ul class="list-unstyled">
 					<li><a href="#">Портфолио</a></li>
@@ -39,7 +50,15 @@
 					<li><a href="/sitemap.html"><i class="fa fa-sitemap"></i> Карта сайта</a></li>
 				</ul>
 			</div>
-		</div>
 
+
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<h4>Облако тегов</h4>
+				<div class="tags-line">
+					{tags}
+				</div>
+			</div>
+
+		</div> {* .row *}
 	</div>
 </div>
