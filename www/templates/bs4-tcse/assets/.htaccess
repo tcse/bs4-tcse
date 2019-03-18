@@ -1,7 +1,2 @@
-Order allow,deny
-Deny from all
-
-<FilesMatch "\.(js)$|^$">
-   Order deny,allow
-   Allow from all
-</FilesMatch>
+Order Deny,Allow
+Allow from all
