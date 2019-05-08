@@ -77,7 +77,7 @@
 			{* <ul class="list-group">
 				{related-news}
 			</ul> *}
-			<div class="p-1 mb-3">
+			<div class="related-card py-1 mb-3">
                 <div class="card-columns">
                 	{related-news}
                 </div>

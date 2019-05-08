@@ -22,13 +22,19 @@
 {* Кирпичная кладка - карточки *}
 <div class="card">
 	<a href="{link}" title="{title}">
-		<img class="card-img-top" src="{image-1}" alt="{title}">
+		<img class="card-img-top" src="{image-1}" alt="...">
 	</a>
     <div class="card-body">
         <h5 class="card-title">{title}</h5>
         <p class="card-text">{text limit="300"}</p>
     </div>
     <div class="card-footer">
-        <small class="text-muted"><i class="fa fa-calendar"></i> {date}</small>
+        <small class="text-muted">
+        	<i class="fa fa-calendar"></i> {date}
+        </small>
+        <a href="{link}" class="text-muted pull-right">
+			<small>Подробнее <i class="fa fa fa-angle-double-right"></i></small>
+		</a>
+
     </div>
 </div>
