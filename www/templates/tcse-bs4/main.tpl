@@ -13,19 +13,19 @@
 
     {* Переключение цветовой схемы *}
     <link href="{THEME}/assets/bootstrap-4.3.1/css/bootstrap.min.css" title="theme1" rel="stylesheet" media="screen">
-    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/sketchy/bootstrap.min.css" title="theme2" rel="alternate stylesheet" type="text/css" media="screen" />
-    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/cerulean/bootstrap.min.css" title="theme3" rel="alternate stylesheet" type="text/css" media="screen" />
-    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/materia/bootstrap.min.css" title="theme4" rel="alternate stylesheet" type="text/css" media="screen" />
-    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/cerulean/bootstrap.min.css" title="theme5" rel="alternate stylesheet" type="text/css" media="screen" />
-    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/darkly/bootstrap.min.css" title="theme6" rel="alternate stylesheet" type="text/css" media="screen" />
-    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/lux/bootstrap.min.css" title="theme7" rel="alternate stylesheet" type="text/css" media="screen" />
-    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/cyborg/bootstrap.min.css" title="theme8" rel="alternate stylesheet" type="text/css" media="screen" />
-    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/flatly/bootstrap.min.css" title="theme9" rel="alternate stylesheet" type="text/css" media="screen" />
-    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/journal/bootstrap.min.css" title="theme10" rel="alternate stylesheet" type="text/css" media="screen" />
-    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/litera/bootstrap.min.css" title="theme11" rel="alternate stylesheet" type="text/css" media="screen" />
-    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/lumen/bootstrap.min.css" title="theme12" rel="alternate stylesheet" type="text/css" media="screen" />
-    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/minty/bootstrap.min.css" title="theme13" rel="alternate stylesheet" type="text/css" media="screen" />
-    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/pulse/bootstrap.min.css" title="theme14" rel="alternate stylesheet" type="text/css" media="screen" />
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/sketchy/bootstrap.min.css" title="theme2" rel="alternate stylesheet" type="text/css" media="screen" />
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cerulean/bootstrap.min.css" title="theme3" rel="alternate stylesheet" type="text/css" media="screen" />
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/materia/bootstrap.min.css" title="theme4" rel="alternate stylesheet" type="text/css" media="screen" />
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cerulean/bootstrap.min.css" title="theme5" rel="alternate stylesheet" type="text/css" media="screen" />
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/darkly/bootstrap.min.css" title="theme6" rel="alternate stylesheet" type="text/css" media="screen" />
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/lux/bootstrap.min.css" title="theme7" rel="alternate stylesheet" type="text/css" media="screen" />
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cyborg/bootstrap.min.css" title="theme8" rel="alternate stylesheet" type="text/css" media="screen" />
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/flatly/bootstrap.min.css" title="theme9" rel="alternate stylesheet" type="text/css" media="screen" />
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/journal/bootstrap.min.css" title="theme10" rel="alternate stylesheet" type="text/css" media="screen" />
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/litera/bootstrap.min.css" title="theme11" rel="alternate stylesheet" type="text/css" media="screen" />
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/lumen/bootstrap.min.css" title="theme12" rel="alternate stylesheet" type="text/css" media="screen" />
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/minty/bootstrap.min.css" title="theme13" rel="alternate stylesheet" type="text/css" media="screen" />
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/pulse/bootstrap.min.css" title="theme14" rel="alternate stylesheet" type="text/css" media="screen" />
 
     <link href="{THEME}/assets/OwlCarousel2-2.3.4/css/owl.carousel.min.css" rel="stylesheet">
     <link href="{THEME}/assets/OwlCarousel2-2.3.4/css/owl.theme.default.min.css" rel="stylesheet">
@@ -44,13 +44,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                    {* Логотип сайта *}
                     <div class="header-logo">
                         <a href="/"><img src="{THEME}/images/logo_tcse.png" class="img-responsive" alt="logo site"></a>
-                    </div> {* / Логотип сайта *}
+                    </div>
                 </div>
             </div>
         </div>
+
         {* Главное меню в шапке сайта *} 
         {* {include file="custom/menu/menu_header.tpl"} *} {* / Главное меню в шапке сайта *}
 
@@ -135,7 +135,7 @@
                 {* Блок копирайтов в подвале сайта *}
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 py-2">
                     <p>
-                        © 2019 Бесплатный шаблон <b>BS4-TCSE</b> для <a href="http://dle-news.ru">DataLife Engine v13.0</a> и выше от веб-студии <a href="http://tcse-cms.com">tcse-cms.com</a>.
+                        © 2019 Бесплатный шаблон <b>TCSE-BS4</b> для <a href="http://dle-news.ru">DataLife Engine v13.3</a> и выше от веб-студии <a href="http://tcse-cms.com">tcse-cms.com</a>.
                     </p>
                     <p>
                         Список компонентов <a href="/demo-components.html">bootstrap</a>
@@ -160,14 +160,12 @@
     {* Bootstrap JavaScript *} 
     {jsfiles} 
     {AJAX}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="{THEME}/assets/popper.js-1.14.7/popper.min.js"></script>
     <script src="{THEME}/assets/bootstrap-4.3.1/js/bootstrap.min.js"></script>
     <script src="{THEME}/assets/OwlCarousel2-2.3.4/js/owl.carousel.min.js"></script>
     <script src="{THEME}/assets/DLE-13.3/js/libs.js"></script>
-    {* Активация JS и код счетчиков  и метрик *}
+    {* Активация JS ПОСЛЕ библиотеки jQuery и код счетчиков, метрик и прочего *}
     {include file="custom/javascript.tpl"}
-
-
 </body>
 
 </html>
