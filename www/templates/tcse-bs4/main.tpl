@@ -30,6 +30,9 @@
     <link href="{THEME}/assets/OwlCarousel2-2.3.4/css/owl.carousel.min.css" rel="stylesheet">
     <link href="{THEME}/assets/OwlCarousel2-2.3.4/css/owl.theme.default.min.css" rel="stylesheet">
 
+    <link href="{THEME}/assets/slick/slick.css" rel="stylesheet">
+    <link href="{THEME}/assets/slick/slick-theme.css" rel="stylesheet">
+
     {* DLE style *}
     <link href="{THEME}/assets/DLE-13.3/css/engine.css" rel="stylesheet">
     <link href="{THEME}/assets/DLE-13.3/css/custom.css" rel="stylesheet">
@@ -163,6 +166,8 @@
     <script src="{THEME}/assets/popper.js-1.14.7/popper.min.js"></script>
     <script src="{THEME}/assets/bootstrap-4.3.1/js/bootstrap.min.js"></script>
     <script src="{THEME}/assets/OwlCarousel2-2.3.4/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="{THEME}/assets/slick/slick.min.js" type="text/javascript" ></script>
     <script src="{THEME}/assets/DLE-13.3/js/libs.js"></script>
     {* Активация JS ПОСЛЕ библиотеки jQuery и код счетчиков, метрик и прочего *}
     {include file="custom/javascript.tpl"}

@@ -28,3 +28,11 @@
             });
         });
     </script>
+
+    <script type="text/javascript">
+        $('.multiple-items').slick({
+            dots: true,
+            slidesToShow: 3, //сколько слайдов показывать в карусели
+            slidesToScroll: 3 // сколько слайдов прокручивать за раз
+        });
+    </script>

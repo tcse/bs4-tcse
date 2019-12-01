@@ -1,9 +1,18 @@
 [page-count=1] 
-<div class="container my-5">
-    <div class="owl-slide owl-carousel">
-      {custom category="1-100"  template="custom/shortstory/slide_1" available="global" navigation="no" days="180"  from="0" limit="9" order="date" sort="desc" cache="no"}
+
+    <div class="container my-5">
+        <h2>owl-carousel</h2>
+        <div class="owl-slide owl-carousel">
+          {custom category="1-100"  template="custom/shortstory/slide_1" available="global" navigation="no" from="0" limit="9" order="date" sort="desc" cache="no"}
+        </div>
     </div>
-</div>
+
+    <div class="container my-5">
+        <h2>Slick слайдер</h2>
+        <div class="multiple-items" data-slick='{"autoplay": true; "infinite": true}'>
+            {custom category="1-100"  template="custom/shortstory/slide_slick" available="global" navigation="no" from="0" limit="9" order="rand" sort="desc" cache="no"}
+        </div>
+    </div>
 
             <div class="container my-5">
                 <h2>Стиль: Card columns</h2>
