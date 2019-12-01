@@ -1,17 +1,3 @@
-{* ===================== *}
-{* Цвет самого меню можно задать следующими варианатми:
-<nav class="navbar navbar-dark bg-dark">
-  <!-- Navbar content -->
-</nav>
-
-<nav class="navbar navbar-dark bg-primary">
-  <!-- Navbar content -->
-</nav>
-
-<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-  <!-- Navbar content -->
-</nav> *}
-{* ===================== *}
 
 <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
     <div class="container">
