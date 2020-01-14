@@ -18,6 +18,11 @@
         $('p.source-link-wrapper a[href^="https://www.youtube.com/"]').removeClass("bla-1");
     </script>
 
+    {* Стилизуем Youtube проигрыватель *}
+    <script>
+        $(".full-content iframe").wrap('<div class="video-container"/>');
+    </script>
+
     {* Хак Цифра рядом с ссылкой в облаке тегов *}
     <script>
         jQuery(document).ready(function($) {
@@ -29,6 +34,7 @@
         });
     </script>
 
+    {* Карусель slick *}
     <script type="text/javascript">
         $('.multiple-items').slick({
             dots: true,

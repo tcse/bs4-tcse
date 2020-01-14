@@ -46,7 +46,7 @@
       {* <div class="card-body">
       </div> *}
         <div class="list-group">
-			{customcomments category="2,3,5-8" template="custom/comlist" available="global" from="0" limit="10" order="date" sort="desc"}
+			{customcomments category="2,3,5-8" template="custom/comments/comlist" available="global" from="0" limit="10" order="date" sort="desc"}
 		</div>
       
     </div>

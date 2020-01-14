@@ -10,7 +10,6 @@
 
     {* Bootstrap *}
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
     {* Переключение цветовой схемы *}
     <link href="{THEME}/assets/bootstrap-4.3.1/css/bootstrap.min.css" title="theme1" rel="stylesheet" media="screen">
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/sketchy/bootstrap.min.css" title="theme2" rel="alternate stylesheet" type="text/css" media="screen" />
@@ -27,6 +26,9 @@
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/minty/bootstrap.min.css" title="theme13" rel="alternate stylesheet" type="text/css" media="screen" />
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/pulse/bootstrap.min.css" title="theme14" rel="alternate stylesheet" type="text/css" media="screen" />
 
+    {* Сетка http://grid.pafnuty.name/demo/ *}
+    {* <link href="{THEME}/assets/legrid/legrid.min.css" rel="stylesheet"> *}
+
     <link href="{THEME}/assets/OwlCarousel2-2.3.4/css/owl.carousel.min.css" rel="stylesheet">
     <link href="{THEME}/assets/OwlCarousel2-2.3.4/css/owl.theme.default.min.css" rel="stylesheet">
 
@@ -35,6 +37,7 @@
 
     {* DLE style *}
     <link href="{THEME}/assets/DLE-13.3/css/engine.css" rel="stylesheet">
+    <link href="{THEME}/assets/DLE-13.3/css/style.css" rel="stylesheet">
     <link href="{THEME}/assets/DLE-13.3/css/custom.css" rel="stylesheet">
 
     
@@ -55,7 +58,8 @@
         </div>
 
         {* Главное меню в шапке сайта *} 
-        {* {include file="custom/menu/menu_header.tpl"} *} {* / Главное меню в шапке сайта *}
+            {* {include file="custom/menu/menu_header.tpl"} *} 
+        {* / Главное меню в шапке сайта *}
 
         {* Альтернатива Главное меню в шапке сайта *} 
             {include file="custom/menu/menu_header_auto.tpl"} 
@@ -102,7 +106,7 @@
 
                 <div class="col-12 col-sm-12 col-md-9 col-lg-9">
                     {info}
-                    {content}
+                    {content class="row"}
                 </div>
                 {* Боковая колонка (сайдбар) *}
                 <div class="col-12 col-sm-12 col-md-3 col-lg-3">
@@ -165,8 +169,9 @@
     {AJAX}
     <script src="{THEME}/assets/popper.js-1.14.7/popper.min.js"></script>
     <script src="{THEME}/assets/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+    
     <script src="{THEME}/assets/OwlCarousel2-2.3.4/js/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="{THEME}/assets/slick/jquery-migrate-1.2.1.min.js"></script>
     <script src="{THEME}/assets/slick/slick.min.js" type="text/javascript" ></script>
     <script src="{THEME}/assets/DLE-13.3/js/libs.js"></script>
     {* Активация JS ПОСЛЕ библиотеки jQuery и код счетчиков, метрик и прочего *}

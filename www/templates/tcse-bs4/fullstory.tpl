@@ -70,13 +70,17 @@
 		</div>
 	</section>
 
+
+
 	[related-news]
 	<section>
 		<div class="col-lg-12 clearfix mb-5">
 			<h3>Похожие публикации</h3>
+
 			{* <ul class="list-group">
 				{related-news}
 			</ul> *}
+
 			<div class="related-card py-1 mb-3">
                 <div class="card-columns">
                 	{related-news}
@@ -85,6 +89,13 @@
 		</div>
 	</section>
 	[/related-news]
+
+	<div class="container my-5">
+        <h2>Slick слайдер</h2>
+        <div class="multiple-items" data-slick='{"autoplay": true; "infinite": true}'>
+            {custom category="{category-id}"  template="custom/shortstory/slide_slick" available="global" navigation="no" from="0" limit="9" order="rand" sort="desc" cache="no"}
+        </div>
+    </div>
 	
 	
 
