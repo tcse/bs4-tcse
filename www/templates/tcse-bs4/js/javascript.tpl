@@ -1,6 +1,6 @@
 
 	{* Переключение цветовой схемы *}
-    <script src="{THEME}/assets/DLE-13.3/js/styleswitch.js" type="text/javascript"></script>
+    <script src="{THEME}/js/styleswitch.js" type="text/javascript"></script>
 
     {* YouTube_PopUp *}
     <link href="{THEME}/assets/youtubepopup/YouTubePopUp.css" rel="stylesheet" type="text/css" >

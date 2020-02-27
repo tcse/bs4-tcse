@@ -26,9 +26,6 @@
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/minty/bootstrap.min.css" title="theme13" rel="alternate stylesheet" type="text/css" media="screen" />
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/pulse/bootstrap.min.css" title="theme14" rel="alternate stylesheet" type="text/css" media="screen" />
 
-    {* Сетка http://grid.pafnuty.name/demo/ *}
-    {* <link href="{THEME}/assets/legrid/legrid.min.css" rel="stylesheet"> *}
-
     <link href="{THEME}/assets/OwlCarousel2-2.3.4/css/owl.carousel.min.css" rel="stylesheet">
     <link href="{THEME}/assets/OwlCarousel2-2.3.4/css/owl.theme.default.min.css" rel="stylesheet">
 
@@ -36,11 +33,10 @@
     <link href="{THEME}/assets/slick/slick-theme.css" rel="stylesheet">
 
     {* DLE style *}
-    <link href="{THEME}/assets/DLE-13.3/css/engine.css" rel="stylesheet">
-    <link href="{THEME}/assets/DLE-13.3/css/style.css" rel="stylesheet">
-    <link href="{THEME}/assets/DLE-13.3/css/custom.css" rel="stylesheet">
+    <link href="{THEME}/css/engine.css" rel="stylesheet">
+    <link href="{THEME}/css/style.css" rel="stylesheet">
+    <link href="{THEME}/css/custom.css" rel="stylesheet">
 
-    
 </head>
 
 <body>
@@ -173,9 +169,9 @@
     <script src="{THEME}/assets/OwlCarousel2-2.3.4/js/owl.carousel.min.js"></script>
     <script src="{THEME}/assets/slick/jquery-migrate-1.2.1.min.js"></script>
     <script src="{THEME}/assets/slick/slick.min.js" type="text/javascript" ></script>
-    <script src="{THEME}/assets/DLE-13.3/js/libs.js"></script>
+    <script src="{THEME}/js/libs.js"></script>
     {* Активация JS ПОСЛЕ библиотеки jQuery и код счетчиков, метрик и прочего *}
-    {include file="custom/javascript.tpl"}
+    {include file="{THEME}/js/javascript.tpl"}
 </body>
 
 </html>
