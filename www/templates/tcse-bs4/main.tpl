@@ -37,6 +37,15 @@
     <link href="{THEME}/css/style.css" rel="stylesheet">
     <link href="{THEME}/css/custom.css" rel="stylesheet">
 
+    {* Мета разметка для соцсетей *}
+    [available=main|cat]
+    <meta property="og:title" content="[available=main]Название сайта[/available]{category-title}"/>
+    <meta property="og:description" content="[available=main]Описание главной[/available]{category-description}"/>
+    <meta property="og:image" content="https://ссылка на лого.png"/>
+    <meta property="og:site_name" content="site.ru"/>
+    <meta property="og:type" content="article"/>
+    [/available]
+
 </head>
 
 <body>
