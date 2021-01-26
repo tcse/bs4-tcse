@@ -25,20 +25,22 @@
 	<div class="container">
 
 		<div class="row">
-			<div class="col-xs-6 col-sm-6">
-				<p class="visible-print">
-						<img src="http://imgholder.ru/320x100/F4F4F4/000000&text=Site+Logo" class="img-responsive" alt="site logo" style="height: 100px;">
-				</p>
-				<p class="hidden-print">
-					<a href="{full-link}">
-						<img src="http://imgholder.ru/320x100/F4F4F4/000000&text=Site+Logo" class="img-responsive" alt="site logo" style="height: 100px;">
-					</a>
-				</p>
-			</div>
-			<div class="col-xs-6 col-sm-6">
-				<p class="pull-right">
-					<img src="http://api.qrserver.com/v1/create-qr-code/?size=100x100&color=000000&data={full-link}"  alt="QR-код адреса статьи">
-				</p>
+			<div class="col-md-12">
+				<div class="col-xs-6 col-sm-6">
+					<p class="visible-print">
+							<img src="{THEME}/images/favicons/android-chrome-192x192.png" class="img-responsive" alt="site logo" style="height: 100px;">
+					</p>
+					<p class="hidden-print">
+						<a href="{full-link}">
+							<img src="{THEME}/images/favicons/android-chrome-192x192.png" class="img-responsive" alt="site logo" style="height: 100px;">
+						</a>
+					</p>
+				</div>
+				<div class="col-xs-6 col-sm-6">
+					<p class="pull-right" style="margin-right: 50px;">
+						<img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&color=000000&data={full-link}"  alt="QR-код адреса статьи"  style="height: 100px;">
+					</p>
+				</div>
 			</div>
 		</div>
 		
@@ -64,7 +66,17 @@
 
 		<div style="clear: both"></div>
 		<hr>
-		   	© 2015 Бесплатный шаблон BS3-TCSE для DataLife Engine
+			<p>Сетевое издание <b>NewsRussia.Media</b></p>
+		   	<p>
+				Учредитель: ООО «Да», ЭЛ №ФС 77 - 74677, выд. Роскомнадзор: 24.12.2018 г. 
+			</p>
+			<p>
+				<b>Главный редактор</b>:<br> Киктенко Анна Николаевна 
+			</p>
+			<address>
+				+7 (960) 243-05-35,<br>
+				<a href="mailto:newsrussia.today@gmail.com">newsrussia.today@gmail.com</a>
+			</address>
 		<hr>
 		<a href="javascript:history.go(-1)" class="hidden-print">Вернуться назад</a>
 	</div>

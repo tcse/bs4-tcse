@@ -1,10 +1,10 @@
 [not-group=5]
 <div class="row">
-	<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-		<img src="{foto}" class="img-responsive img-thumbnail" alt="фото {login}">
-		<br>{group}
+	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+		<img src="{foto}" class="img-fluid img-thumbnail" alt="фото {login}">
+		<br><small>{group}</small>
 	</div>
-	<div class="col-xs-12 col-sm-6 col-md-9 col-lg-9">
+	<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
 		<ul class="list-group">
 			[admin-link]<li class="list-group-item"><a href="{admin-link}" target="_blank"><i class="fa fa-unlock fa-fw"></i> Админка</a></li>[/admin-link]
 			<li class="list-group-item"><a href="{profile-link}"><i class="fa fa-male fa-fw"></i> Мой профиль ({login})</a></li>
@@ -27,12 +27,12 @@
 		<p>
 			<form  role="form" method="post" action="">
 				<div class="form-group">
-					<label for="inputEmail">{login-method}</label>
-					<input class="form-control" type="text" id="inputEmail" name="login_name" />
+					{* <label for="inputEmail">{login-method}</label> *}
+					<input class="form-control w-100" type="text" id="inputEmail" name="login_name" placeholder="{login-method}" />
 				</div>
 				<div class="form-group">
-					<label for="inputPassword">Пароль:</label>
-					<input class="form-control" type="password" id="inputPassword" name="login_password" />
+					{* <label for="inputPassword">Пароль:</label> *}
+					<input class="form-control w-100" type="password" id="inputPassword" name="login_password" placeholder="Пароль" />
 				</div>
 				<div class="checkbox">
 					<label><input type="checkbox" value="1" name="login_not_save" /> Запомнить</label>
@@ -43,20 +43,21 @@
 			</form>
 		</p>
 		<p>
-			<a href="{registration-link}" class="btn btn-default">Регистрация на сайте!</a>
-			<a href="{lostpassword-link}" class="btn btn-default">Забыли пароль?</a>
+			<a href="{registration-link}" class="btn btn-primary mb-2">Регистрация на сайте!</a>
+			<a href="{lostpassword-link}" class="btn btn-warning mb-2">Забыли пароль?</a>
 		</p>
 		<p><br></p>
 	</div>
 
 	<div>
-		<h4><i class="fa fa-key"></i> Использовать социальные сети</h4>
+		[vk]<h4><i class="fa fa-key"></i> Использовать социальные сети</h4>[/vk]
 		<p>
-			[vk]<noindex><a href="{vk_url}" target="_blank" class="btn btn-default"><i class="fa fa-vk"></i> Вконтакте</a></noindex>[/vk]
-			[facebook]<noindex><a href="{facebook_url}" target="_blank" class="btn btn-default"><i class="fa fa-facebook"></i> Facebook</a></noindex>[/facebook]
-			[google]<noindex><a href="{google_url}" target="_blank" class="btn btn-default"><i class="fa fa-google"></i> Google</a></noindex>[/google]
-			[mailru]<noindex><a href="{mailru_url}" target="_blank" class="btn btn-default"> @ Mail.ru</a></noindex>[/mailru]
-			[yandex]<noindex><a href="{yandex_url}" target="_blank" class="btn btn-default"> Яндекс</a></noindex>[/yandex]
+			[vk]<noindex><a href="{vk_url}" target="_blank" class="btn btn-primary"><i class="fa fa-vk"></i> Вконтакте</a></noindex>[/vk]
+			[facebook]<noindex><a href="{facebook_url}" target="_blank" class="btn btn-primary"><i class="fa fa-facebook"></i> Facebook</a></noindex>[/facebook]
+			[google]<noindex><a href="{google_url}" target="_blank" class="btn btn-primary"><i class="fa fa-google"></i> Google</a></noindex>[/google]
+			[mailru]<noindex><a href="{mailru_url}" target="_blank" class="btn btn-primary"> @ Mail.ru</a></noindex>[/mailru]
+			[yandex]<noindex><a href="{yandex_url}" target="_blank" class="btn btn-primary"> Яндекс</a></noindex>[/yandex]
+			[odnoklassniki]<noindex><a href="{odnoklassniki_url}" target="_blank" class="btn btn-outline-secondary">Одноклассники</a></noindex>[/odnoklassniki]
 		</p>	
 	</div>
 

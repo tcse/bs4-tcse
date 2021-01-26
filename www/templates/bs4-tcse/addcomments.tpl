@@ -1,4 +1,4 @@
-<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 w-100">
 
   [not-logged]
     <div class="input-group mb-2">
@@ -15,7 +15,7 @@
       <input placeholder="E-mail" type="mail" name="mail" class="form-control">
     </div>
   [/not-logged]
-    <div class="list-group editorcomm">
+    <div class="list-group editorcomm w-100">
       {editor}
     </div>
   [question]
@@ -32,7 +32,6 @@
   [sec_code]
 
     <div class="input-group">
-      <label for="sec_code">Повторите код:</label>
       <div class="c-captcha">
         <p>{sec_code}</p>
         <p><input title="Введите код указанный на картинке" type="text" name="sec_code" id="sec_code" class="form-control" placeholder="сюда вводите код"></p>
@@ -42,15 +41,13 @@
   [/sec_code]
 
   [recaptcha]
-    <div class="input-group">
-      <label for="recaptcha">Защита от роботов</label><br>
+    <div class="input-group my-2">
       {recaptcha}
     </div>
   [/recaptcha]
 
   <div>
-    <p></p>
-    <button type="submit" name="submit" class="btn btn-success btn-sm btn-block">
+    <button type="submit" name="submit" class="btn btn-info">
       <span>
         [not-aviable=comments]<i class="fa fa-cloud-upload"></i> Отправить[/not-aviable]
         [aviable=comments]<i class="fa fa-eraser"></i> Изменить[/aviable]

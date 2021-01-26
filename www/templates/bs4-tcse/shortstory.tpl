@@ -1,56 +1,67 @@
-
-<div class="col-12 col-sm-6 col-md-12 col-lg-6">
-
-    <div class="card">
-        <a href="{full-link}">
-            <img class="card-img-top img-fluid" src="{image-1}" alt="">
-        </a>
-        <div class="card-body">
-            
-            <h5 class="card-title">{title}</h5>
-
-            <p class="card-text">
-                {short-story limit="300"}... [edit]
-                <button class="btn btn-default d-xs-block" type="button" title="редактировать"><i class="fa fa-pencil-square-o"></i></button>[/edit]
-            </p>
-            [tags]
-            <p class="card-text">
-                <small class="text-muted"><i class="fa fa-tags"></i> <span class="tagcloud2">{tags}</span></small>
-            </p>
-            [/tags]
-
-            <div class="d-none">
-                <p class="text-right">
-                    [edit]<button class="btn btn-default" type="button" title="редактировать"><i class="fa fa-pencil-square-o"></i></button>[/edit]
-                    <a class="btn btn-primary" href="{full-link}">подробнее &raquo;</a>
-                </p>
-            </div>
-
-            <div class="d-xs-block">
-                <p>
-                    <a class="btn btn-primary btn-block" href="{full-link}">подробнее &raquo;</a>
-                </p>
-            </div>
-
-        </div> {* card-body *}
-
-        <div class="card-footer text-muted">
-            <p class="d-md-block d-sm-block d-xs-block">
-                <small class="text-muted">
-                    <i class="fa fa-folder"></i> {link-category}&emsp;
-                    <i class="fa fa-calendar"></i> [day-news]{date}[/day-news]&emsp; [com-link]
-                    <i class="fa fa-comments-o"></i> {comments-num}&emsp;[/com-link]
-                    <i class="fa fa-eye"></i> {views}
-                </small>
-            </p>
-        </div> {* card-footer *}
+[newscount=1]
+<div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 mb-3">
+    <div class="border box-h390">
+        <div class="h5 text-uppercase text-center my-3">Последние новости</div>
+        <div class="list-group list-group-flush">
+            {custom category="1-30" template="custom/shortstory/list-group-item" limit="6" order="date" sort="desc" cache="no"}
+        </div>
     </div>
-    <p><br></p>
-
 </div>
 
+<div class="card border-0  mb-2 col-12 col-sm-12 col-md-6 col-lg-3">
+    <a href="{full-link}" class="text-white">
+        <div class="crop-box-h195 bg-light">
+            [xfgiven_image]
+                {* <img src="/resize?src=[xfvalue_image_url_image]&w=512&h=288&a=c" class="card-img-top rounded-0" alt=""> *}
+                <img src="[xfvalue_thumb_url_image]" class="card-img-top rounded-0" alt="">
+            [/xfgiven_image]
+        </div> 
+    </a>
+    <div class="card-body mx-n4">
+        <p class="card-text text-uppercase text-secondary small">{category}</p>
+        <h5 class="card-title mt-n3">
+            <a href="{full-link}">{title}</a> 
+            [edit]<i class="fa fa-edit"></i>[/edit]
+        </h5>
+        <p class="card-text font-weight-light text-secondary font-12">{short-story limit="200"}</p>
+    </div>
+</div>
+[/newscount]
 
-{* Автоматическое очищение обтекания текстом блоков после каждой 3,6,9 и 12 краткой новости *}
-[newscount=2,4,6,8,10,12]
-<div class="w-100 d-md-block d-lg-block"></div> 
-[/newscount] {* / Автоматическое очищение обтекания текстом блоков после каждой 3,6,9 и 12 краткой новости *}
+[not-newscount=1]
+<div class="card border-0  mb-2 col-12 col-sm-12 col-md-6 col-lg-3">
+    <a href="{full-link}" class="text-white">
+        <div class="crop-box-h195 bg-light">
+            [xfgiven_image]
+                {* <img src="/resize?src=[xfvalue_image]&w=512&h=288&a=c" class="card-img-top rounded-0" alt=""> *}
+                <img src="[xfvalue_thumb_url_image]" class="card-img-top rounded-0" alt="">
+            [/xfgiven_image]
+        </div> 
+    </a>
+    <div class="card-body mx-n4">
+        <p class="card-text text-uppercase text-secondary small">{category}</p>
+        <h5 class="card-title mt-n3">
+            <a href="{full-link}">{title}</a> 
+            [edit]<i class="fa fa-edit"></i>[/edit]
+        </h5>
+        <p class="card-text font-weight-light text-secondary font-12">{short-story limit="200"}</p>
+    </div>
+</div>
+[/not-newscount]
+
+[newscount=6]
+    [banner_yandex_m]
+    <div class="card border-0  mb-2 col-12 col-sm-12 col-md-6 col-lg-3 crop-box-h390" [group=1]title="Место для банера с именем yandex_m">
+        {banner_yandex_m}
+    </div>
+    [/banner_yandex_m]
+[/newscount]
+
+
+[newscount=14]
+    [banner_yandex_footer]
+    <div class="card border-0  mb-4 col-12 col-sm-12 col-md-12 col-lg-12 crop-box-h195 bg-light"  [group=1]title="Место для банера с именем yandex_footer">
+        {banner_yandex_footer}
+    </div>
+    [/banner_yandex_footer]
+[/newscount]

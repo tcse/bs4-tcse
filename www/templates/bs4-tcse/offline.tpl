@@ -2,7 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
 <head>
 <meta content="text/html; charset={charset}" http-equiv="Content-Type" />
-<link href="{THEME}/assets/DLE/css/132/offline.css" type="text/css" rel="stylesheet">
+{* Bootstrap *}
+    <link href="{THEME}/assets/fonts/css/fontawesome-all.min.css" rel="stylesheet" type="text/css" >
+    <link href="{THEME}/assets/bootstrap/4.5.3/css/bootstrap.min.css" rel="stylesheet" media="screen">
 <style type="text/css">
 body{ 
 	font: 12px/16px Arial, Helvetica, Tahoma, sans-serif;
@@ -20,13 +22,10 @@ a:hover { text-decoration: none; }
 <body>
 <div align="center" class="errorwrap">
 	<p>{reason}</p>
-	<p>
-		<noindex>
-		<a class="twitter-timeline" href="https://twitter.com/tcsecms" data-widget-id="426987062743400448">Твиты пользователя @tcsecms</a>
-		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-		</noindex>
-	</p>
 	
+
+	{* Bootstrap JavaScript *} 
+    <script defer src="{THEME}/assets/bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
 </div>
 </body>
 </html>

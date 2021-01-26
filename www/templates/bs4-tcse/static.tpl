@@ -1,38 +1,33 @@
-<div class="col-12 col-sm-12 col-md-12 col-lg-12 mb-5">
-    <div class="card card-default">
-        {* <div class="card-header">
-            <h1 class="card-title">{description}</h1>
-        </div> *}
+<div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+    <div class="card border-0">
+
         <div class="card-body">
-            <h1 class="card-title">{description}</h1>
+            <h1 class="card-title">{description} [edit]<i class="fa fa-edit"></i>[/edit]</h1>
             <div class="full-content">
                 {static}
             </div>
 
             {* показать только на странице КАРТА САЙТА  /sitemap.html *}
             [static=sitemap]
-                <ol>
-                    {custom category="1-100" template="custom/sitemap" from="0" limit="500" order="date" sort="desc" cache="yes"}
-                </ol>
+                {* Вывод списка категорий *}
+                <div class="row mt-5">
+                    {catmenu id="1-50" subcat="yes" template="custom/categorymenu/card_item"}
+                </div>
                 <div class="clearfix"></div>    
-            [/static] {* /показать только на странице КАРТА САЙТА *}
-
-            [static=demo-components]
-                 {include file="demo/components.tpl"}
             [/static]
-                    
+            
+            [static=contact,reklama,advertisers,vacancy,rightholders]
+            <div class="my-3">
+                <span data-uniform='{"formConfig": "_feedback"}' class="btn btn-danger">Обратная связь</span>   
+            </div>
+            [/static]
 
-            [print-link]<i class="fa fa-print"></i> Распечатать[/print-link] [edit]<i class="fa fa-edit"></i>[/edit]
+            {* [print-link]<i class="fa fa-print"></i> Распечатать[/print-link] [edit]<i class="fa fa-edit"></i>[/edit] *}
             <div align="center">{pages}</div>
         </div>
     </div>
 </div>
 
-
-{* =========================== *}
-{* 
-1. Добавить новую статическую станицу из раздела /admin.php?mod=static&action=addnew 
-2. Назвать страницу sitemap 
-3. Содержимое может быть любым.
- *}
-{* =========================== *}
+<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+    {include file="custom/main/sidebar.tpl"}
+</div>

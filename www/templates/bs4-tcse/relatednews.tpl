@@ -1,40 +1,18 @@
-{* Классический список *}
-{* <li class="list-group-item">
-	<a href="{link}">
-		{title}
-		<span class="pull-right"><i class="fa fa-angle-double-right"></i></span>
-	</a>
-</li> *}
+<div class="card border-0 mb-2 px-3">
+    <a href="{link}" class="text-white">
+        <div class="crop-box-h195 bg-light">
+        [xfgiven_image]
+            <img src="/resize?src=[xfvalue_image]&w=512&h=288&a=c" class="card-img-top rounded-0" alt="">
+        [/xfgiven_image]
 
-{* Кирпичная кладка поверх картинок *}
-{* <div class="card">
-    <img class="card-img" src="{image-1}" alt="{title}">
-    <a href="{link}" style="text-shadow: 2px 2px 2px #ffffff; color: #000;">
-	    <div class="card-img-overlay">
-	        <h5 class="card-title" style="text-shadow: 2px 2px 2px #ffffff;">{title}</h5>
-	        <p class="card-text" style="text-shadow: 2px 2px 2px #ffffff;">{text limit="40"}...</p>
-	        <p class="card-text p-3" style="text-shadow: 2px 2px 2px #ffffff;"><i class="fa fa-calendar"></i> {date}</p>
-	    </div>
-	</a>
-</div> *}
-
-
-{* Кирпичная кладка - карточки *}
-<div class="card">
-	<a href="{link}" title="{title}">
-		<img class="card-img-top" src="{image-1}" alt="...">
-	</a>
-    <div class="card-body">
-        <h5 class="card-title">{title}</h5>
-        <p class="card-text">{text limit="300"}</p>
-    </div>
-    <div class="card-footer">
-        <small class="text-muted">
-        	<i class="fa fa-calendar"></i> {date}
-        </small>
-        <a href="{link}" class="text-muted pull-right">
-			<small>Подробнее <i class="fa fa fa-angle-double-right"></i></small>
-		</a>
-
+        [xfnotgiven_image]
+            <img src="/resize?src={image-1}&w=512&h=288&a=c" class="card-img-top rounded-0" alt="">
+        [/xfnotgiven_image]
+        </div> 
+    </a>
+    <div class="card-body mx-n4">
+        <p class="card-text text-uppercase text-secondary small">{category}</p>
+        <h5 class="card-title mt-n3">{title}</h5>
+        <p class="card-text font-weight-light text-secondary font-12">{text limit="200"}</p>
     </div>
 </div>

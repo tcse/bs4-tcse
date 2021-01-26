@@ -1,0 +1,353 @@
+/* Template created by tcse-cms.com | Author: Vitaly V. Chuyakov | URL: http://tcse-cms.com */
+@font-face {font-family: Arial, "Times New Roman", sans-serif;}
+body {
+    background-color: #ccc;
+    /*background-image: url(../images/fon_moscownews.jpg);*/
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover;
+    letter-spacing: normal;
+    font-family: Arial, "Times New Roman", sans-serif;
+}
+.wrapper {
+    background-color: #fff;
+    border: 0 1px solid gray;
+    box-shadow: 0 0 16px #ccc;
+    margin: 0 auto;
+    max-width: 1360px;
+}
+a {color: #000;}
+a:hover {color: #fe0d01;}
+.a-text-secondary {font-size: 0.9em;}
+.a-text-secondary a {color: #646464;}
+.text-lightgrey a {color: #99999a;}
+.text-lightgrey {color: #99999a; font-size: 1.1em;}
+.font-12  {font-size: 14px;}
+#dofullsearch {display: none;}
+/* ============================================================== */
+/* Переназначение стилей DLE */
+/* ============================================================== */
+.ui-dialog-buttonset button {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: 5px;
+    font-weight: normal;
+    text-align: center;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    color: #555555;
+    background-color: #ffffff;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+.bbcodes, .btn-border {
+    border: 0 none;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    height: 36px;
+    border-radius: 0px;
+    line-height: 22px;
+    outline: none;
+    background-color: transparent;
+    border-color: #fe0d01;
+    color: #fe0d01;
+    border: 1px solid #fe0d01;
+    padding: 7px 22px;
+    text-decoration: none !important;
+    box-shadow: none;
+    transition: all ease .1s;
+}
+.btn:hover, .bbcodes:hover, .ui-button:hover {
+    background-color: #343a40;
+    color: #fff;
+}
+.page-link:hover {
+    background-color: transparent; 
+}
+
+.list-group-item-secondary.list-group-item-action {
+    color: #383d41;
+    background-color: #f5f4f4;
+}
+.list-group-item {
+    border: 0px;
+}
+.list-group-flush>.list-group-item {
+    border-width: 0;
+}
+/*.border-secondary {
+    border-color: #646464!important;
+}*/
+.dropdown-item.active, .dropdown-item:active {
+background-color: #fe0d01;
+}
+
+/* ============================================================== */
+/* основной шаблон main.tpl */
+/* ============================================================== */
+
+/*логотип сайта*/
+.header-logo {
+    margin: 10px 0;
+}
+.header-logo a:hover {
+    text-decoration: none;
+    color: #000;
+}
+/*подвал сайта */
+.bg-footer a {
+    color: #fff;
+}
+.bg-footer {
+    background-color: #1f2124;
+}
+
+/* ============================================================== */
+/* краткая новость, шаблон shortstory.tpl */
+/* ============================================================== */
+.short-news-img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+/* ============================================================== */
+/* полная новость, шаблон fullstory.tpl */
+/* ============================================================== */
+.full-content img {
+    max-width: 100%;
+    margin-right: 10px;
+}
+.full-content a {
+    color: #fe0d01;
+    border-bottom: 1px dashed;
+}
+.block-rating {
+    padding: 10px 0;
+}
+
+/* ============================================================== */
+/* похожие новости, шаблон relatednews.tpl */
+/* ============================================================== */
+.related-card>.card-columns {
+    column-count: 2;
+}
+
+/* ============================================================== */
+/* комментарии, шаблон comments.tpl */
+/* ============================================================== */
+.smartcomments img {
+    max-width: 100%;
+}
+
+/* ============================================================== */
+/* облако тегов*/
+/* ============================================================== */
+.tagcloud a {
+    line-height: 36px;
+    position: relative;
+    font-size: 12px;
+    margin: 0 5px 5px 5px;
+    padding: 8px 7px;
+    color: #7a7a7a;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.tagcloud a:hover {
+    color: #fff;
+    background-color: #287ae9;
+}
+
+.clouds_xsmall {
+    display: inline-block;
+}
+
+.tags-line span {
+    display: inline-block;
+    padding: 0 10px 10px 0;
+}
+
+.tags-line span.clouds_xlarge {
+    font-weight: 800;
+}
+
+.tags-line span.clouds_large {
+    font-weight: 700;
+}
+
+.tags-line span.clouds_medium {
+    font-weight: 600;
+}
+
+.tags-line span.clouds_small {
+    font-weight: 300;
+}
+
+.tags-line span.clouds_xsmall {
+    font-weight: 200;
+}
+
+.tags-line .tags_more {
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 640px) {
+
+    /* если ширина экрана от 320px до 640px */
+    .tagcloud2 a {
+        line-height: 36px;
+        position: relative;
+        font-size: 12px;
+        margin: 0 5px 5px 5px;
+        padding: 8px 7px;
+        color: #7a7a7a;
+        border: 0px solid #ccc;
+        background-color: #ccc;
+        color: #000;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    .tagcloud2 a:hover {
+        color: #fff;
+        background-color: #287ae9;
+    }
+
+    .tagcloud2 {
+        color: #fff;
+    }
+
+    h1, .h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* ============================================================== */
+/* Градиент на фото https://mdbootstrap.com/docs/jquery/css/gradients/#image */
+/* ============================================================== */
+.img-gradient{
+    position:relative;
+    display:inline-block;
+}
+.img-gradient:after {
+    content:'';
+    position:absolute;
+    left:0; top:0;
+    width:100%; height:100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(4,4,4,0) 50%, rgba(255,255,255,0) 100%);
+    }
+.img-gradient img{
+  display:block;
+}
+/* ============================================================== */
+/* текст наложения на картинку */
+/* ============================================================== */
+.card-img-overlay-bottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1.25rem;
+}
+.card-img-overlay-top {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    padding: 1.25rem;
+}
+
+#my-footer a {color: #fff;}
+#my-footer a:hover {color: #ccc;}
+
+/* ============================================================== */
+/* Кадрирование изображений https://tpverstak.ru/cropping-images-css-svg/ */
+/* ============================================================== */
+.crop-box-h150 {
+    position: relative;
+    overflow:hidden;
+    min-height: 150px;
+}
+.crop-box-h150 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.crop-box-h195 {
+    position: relative;
+    overflow:hidden;
+    min-height: 195px;
+}
+.crop-box-h195 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.crop-box-h390 {
+    position: relative;
+    overflow:hidden;
+    min-height: 390px;
+}
+.crop-box-h390 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* ============================================================== */
+/* Фиксированные блоки для ленты новостей */
+/* ============================================================== */
+.box-h195 {
+    height: 195px; 
+    overflow:hidden;
+}
+.box-h390 {
+    height: 390px; 
+    overflow:hidden;
+}
+.box-h780 {
+    height: 780px; 
+    overflow:hidden;
+}
+.box-h800 {
+    height: 800px; 
+    overflow:hidden;
+}
+
+#my-footer  .a-text-footer-icon a,
+#my-footer  .a-text-footer-icon {
+    color: #636466; font-size: 0.9em;
+}
+.border-footer-icon {
+    border-color: #636466!important;
+}
+
+.fz-15 {font-size: 15px;}
+@media (min-width: 1024px) and (max-width: 1300px) {
+    .fz-15 {font-size: 14px;}
+}
+@media (min-width: 1367px) and (max-width: 1440px) {
+    .fz-15 {font-size: 16px;}
+}
+@media (min-width: 1441px) {
+    .fz-15 {font-size: 17px;}
+}

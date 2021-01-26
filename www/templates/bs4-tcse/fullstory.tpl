@@ -1,98 +1,105 @@
 
+
+<div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9 [not-desktop]px-0[/not-desktop]">
+
 	<article class="clearfix mb-5">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<h1>{title}</h1>
-			<p>
-				<i class="fa fa-folder-open-o"></i> {link-category}&emsp;
-				<i class="fa fa-calendar"></i> [day-news]{date}[/day-news]&emsp;
-				<i class="fa fa-eye"></i> {views}&emsp;
-				[add-favorites]<i class="fa fa-bookmark-o"></i>[/add-favorites]
-				[del-favorites]<i class="fa fa-bookmark"></i>[/del-favorites]&emsp;
-				[edit]<i class="fa fa-edit"></i>[/edit]
-			</p>
+			<h1>{title} [edit]<i class="fa fa-edit"></i>[/edit]</h1>
+
+			<ul class="list-inline my-3">
+				[tags]
+				<li class="list-inline-item">
+				    <i class="fa fa-tags"></i> <span class="tagcloud2">{tags}</span>
+				</li>
+				[/tags]
+				<li class="list-inline-item">
+				    <i class="fa fa-folder-open fa-fw"></i> {link-category}
+				</li>
+				<li class="list-inline-item">
+				    <i class="fa fa-calendar fa-fw"></i> [day-news]{date=d.m.Y, H:i}[/day-news]
+				</li>
+				[xfgiven_auther]
+				<li class="list-inline-item">
+				    <i class="fa fa-user fa-fw" aria-hidden="true"></i> <span itemprop="name">[xfvalue_auther]</span>
+				</li>
+				[/xfgiven_auther]
+				[group=1]
+				<li class="list-inline-item">
+				    <i class="fa fa-eye fa-fw"></i> {views}
+				</li>
+				[/group]
+				<li class="list-inline-item">
+				    [add-favorites]<i class="fa fa-bookmark-o fa-fw"></i>[/add-favorites]
+				    [del-favorites]<i class="fa fa-bookmark fa-fw"></i>[/del-favorites]
+				</li>
+				[group=1]
+				<li class="list-inline-item">
+				    [print-link]<i class="fa fa-print"></i>[/print-link]
+				</li>
+				[/group]
+			</ul>
+
+			[xfgiven_image]
+			<div class="crop-box-h390 bg-light mb-3">
+				{* [xfvalue_image] *}	            
+	            {* <img src="/resize?src=[xfvalue_image_url_image]&w=947&h=390&a=c" class="image-fluid" alt="{title}"> *}
+	            <img src="[xfvalue_image_url_image]" class="image-fluid" alt="{title}">
+	        </div>
+	        [/xfgiven_image]
+
+	        [xfgiven_photo]
+	        	<div class="text-center mt-n1 mb-3 small">Источник фото: [xfvalue_photo]</div>
+	        [/xfgiven_photo]
 	          	
-			<div class="full-content clearfix">
+			<div class="full-content">
 				{full-story}
 			</div>
-
-		    [rating]
-			<div class="block-rating">
-				<ul class="list-inline">
-					<li class="text-danger list-inline-item">Оцените публикацию</li>
-					<li class="list-inline-item">
-						[rating-type-1]
-						<div class="rate">{rating}</div>
-						[/rating-type-1]
-
-						[rating-type-2]
-						<ul class="list-inline">
-							<li class="list-inline-item">[rating-plus]<i class="fa fa-thumbs-o-up"></i>[/rating-plus]</li>
-							<li class="list-inline-item">{rating}</li>
-						</ul>
-						[/rating-type-2]
-
-						[rating-type-3]
-						<ul class="list-inline">
-							<li class="list-inline-item">[rating-plus]<i class="fa fa-thumbs-o-up fa-4x"></i>[/rating-plus]</li>
-							<li class="list-inline-item">{rating}</li>
-							<li class="list-inline-item">[rating-minus]<i class="fa fa-thumbs-o-down fa-4x"></i>[/rating-minus]</li>
-						</ul>
-						[/rating-type-3]
-					</li>
-				</ul>
-			</div>
-			[/rating]
-	         	
-			
-         	<div class="card">
-		  		<div class="card-body">
- 					[tags]<i class="fa fa-tags"></i> <span class="tagcloud2">{tags}</span>&emsp;&emsp;[/tags]
- 					[complaint]<i class="fa fa-thumbs-o-down"></i>  Настрочить жалобу в спортлото [/complaint]&emsp;&emsp;
- 					<i class="fa fa-user"></i> {author}&emsp;&emsp;
- 					[print-link]<i class="fa fa-print"></i>  Распечатать[/print-link]
- 				</div>
-         	</div>
    		  	
 		</div>
 	</article>
 
+	<div class="border-bottom border-secondary my-1 ml-n4"></div>
 
-	<section class="w-100 mb-5">
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<div class="card">
-				<div class="card-header">Реклама на сайте</div>
-				<div class="card-body">
-					<p>
-						сюда можно поставить код контекстной рекламы.
-					</p>
-				</div>
+	<section>
+		<div class="col-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="h5 text-uppercase mt-5">Другие новости раздела: {category-title}</div>
+			<div class="card-deck">
+				{custom category="{category-id}" idexclude="{news-id}" template="custom/shortstory/card-2" limit="3" from="0" order="date" sort="desc" cache="no"}
+			</div>
+		</div>
+	</section>
+
+	<div class="border-bottom border-secondary my-1 ml-n4"></div>
+
+	<section>
+		<div class="col-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="h5 text-uppercase mt-5">Популярное в сети</div>
+			<div class="card-deck">
+				{custom category="1-20" idexclude="{news-id}" template="custom/shortstory/main-card-2"  days="90"  limit="3" from="0" order="read" sort="asc" cache="no"}
+			</div>
+			<div class="card-deck">
+				{custom category="1-20" idexclude="{news-id}" template="custom/shortstory/main-card-2"  days="90"  limit="3" from="3" order="read" sort="asc" cache="no"}
 			</div>
 		</div>
 	</section>
 
 	[related-news]
-	<section>
-		<div class="col-lg-12 clearfix mb-5">
+	<div class="border-bottom border-secondary my-1 ml-n4"></div>
+	<section class="my-5">
+		<div class="col-12 col-sm-12 col-md-12 col-lg-12">
 			<h3>Похожие публикации</h3>
-			{* <ul class="list-group">
+			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
 				{related-news}
-			</ul> *}
-			<div class="related-card py-1 mb-3">
-                <div class="card-columns">
-                	{related-news}
-                </div>
-            </div>
+			</div>
 		</div>
 	</section>
 	[/related-news]
-	
-	
 
-
-
+[comments]
+	<div class="border-bottom border-secondary my-1 ml-n4 w-100"></div>
 	<section>
 		<div class="col-12 col-sm-12 col-md-12 col-lg-12">
-			[comments]<h3>Обсуждения</h3>[/comments]
+			<h3>Обсуждения</h3>
 
 			[not-comments]
 			<div class="card bg-light mb-3">
@@ -115,16 +122,24 @@
 				</div>
 			</div>
 			[/group]
-
+			<!-- addcomments -->
 		  	<div class="mb-3">
 				{addcomments}
 			</div>
+			<!-- comments -->
 		  	<div class="mb-3">
 		  		{comments}
 		  	</div>
+		  	<!-- navigation -->
 		  	<div class="mb-3">
 		  		{navigation}
 		  	</div>
 		</div>
 	</section>
+[/comments]
 
+</div>
+
+<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+    {include file="custom/main/sidebar.tpl"}
+</div>
