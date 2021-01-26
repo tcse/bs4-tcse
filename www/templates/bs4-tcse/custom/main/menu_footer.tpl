@@ -3,10 +3,22 @@
 		<div class="row">
 
 			<div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-				
-					<p>
-						<a href="/sitemap.html">Карта сайта</a> <a href="/sitemap.xml" title="XML sitemap"><i class="fa fa-sitemap"></i></a>
-					</p>
+				<p>
+                    © 2021 Бесплатный шаблон <b>BS4-TCSE</b> для <a href="http://dle-news.ru">DataLife Engine v13.0</a> и выше от веб-студии <a href="http://tcse-cms.com">tcse-cms.com</a>.
+                </p>
+                <p>
+                    Список компонентов <a href="/demo-components.html">bootstrap</a>
+                </p>
+                <p>
+                    В основе фреймворк <a href="https://getbootstrap.com/docs/4.5/getting-started/introduction/" target="_blank">twitter bootstrap 4</a> и набор иконок <a href="http://fontawesome.io/icons/" target="_blank">fontawesome</a>.
+                </p>
+                <p>
+                    Дополнительные шаблоны <a href="https://bootswatch.com/" target="_blank">bootswatch.com</a> и CDN <a href="https://www.bootstrapcdn.com/bootswatch/" target="_blank">bootstrapcdn.com</a>
+                </p>
+			
+				<p>
+					<a href="/sitemap.html">Карта сайта</a> <a href="/sitemap.xml" title="XML sitemap"><i class="fa fa-sitemap"></i></a>
+				</p>
 
 					
 			</div>
@@ -15,22 +27,22 @@
 				<div class="text-center a-text-footer-icon">
 					<ul class="list-inline my-3 text-center">
                         <li class="list-inline-item">
-                            <a href="https://vk.com/newsrussiatoday" target="_blank"><span class="border border-footer-icon rounded-circle p-1"><i class="fab fa-vk fa-fw"></i></span></a>
+                            <a href="https://vk.com/" target="_blank"><span class="border border-footer-icon rounded-circle p-1"><i class="fab fa-vk fa-fw"></i></span></a>
                         </li> 
                         <li class="list-inline-item">
-                            <a href="https://www.facebook.com/newsrussia.today/" target="_blank"><span class="border border-footer-icon rounded-circle p-1"><i class="fab fa-facebook fa-fw"></i></span></a>
+                            <a href="https://www.facebook.com/" target="_blank"><span class="border border-footer-icon rounded-circle p-1"><i class="fab fa-facebook fa-fw"></i></span></a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="https://twitter.com/_newsrussia_" target="_blank"><span class="border border-footer-icon rounded-circle p-1"><i class="fab fa-twitter fa-fw"></i></span></a>
+                            <a href="https://twitter.com/" target="_blank"><span class="border border-footer-icon rounded-circle p-1"><i class="fab fa-twitter fa-fw"></i></span></a>
                         </li> 
                         <li class="list-inline-item">
-                            <a href="https://www.instagram.com/newsrussia.today/" target="_blank"><span class="border border-footer-icon rounded-circle p-1"><i class="fab fa-instagram fa-fw"></i></span></a>
+                            <a href="https://www.instagram.com/" target="_blank"><span class="border border-footer-icon rounded-circle p-1"><i class="fab fa-instagram fa-fw"></i></span></a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="https://www.youtube.com/channel/UCaCST6WDsmOi1a3ENKEQJkA" target="_blank"><span class="border border-footer-icon rounded-circle p-1"><i class="fab fa-youtube fa-fw"></i></span></a>
+                            <a href="https://www.youtube.com/" target="_blank"><span class="border border-footer-icon rounded-circle p-1"><i class="fab fa-youtube fa-fw"></i></span></a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="https://ok.ru/newsrussiatoday" target="_blank"><span class="border border-footer-icon rounded-circle p-1"><i class="fab fa-odnoklassniki fa-fw"></i></span></a>
+                            <a href="https://ok.ru/" target="_blank"><span class="border border-footer-icon rounded-circle p-1"><i class="fab fa-odnoklassniki fa-fw"></i></span></a>
                         </li>
                         <li class="list-inline-item">
                             <a href="/rss.xml" target="_blank"><span class="border border-footer-icon rounded-circle p-1"><i class="fas fa-rss fa-fw"></i></span></a>

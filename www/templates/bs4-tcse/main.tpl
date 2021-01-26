@@ -12,11 +12,30 @@
     {* Favicons realfavicongenerator.net *}
     {* Bootstrap *}
     <link href="{THEME}/assets/fonts/css/fontawesome-all.min.css" rel="stylesheet" type="text/css" >
-    <link href="{THEME}/assets/bootstrap/4.5.3/css/bootstrap.css?001" rel="stylesheet" media="screen">
+
+    {* Использовать, если нет необходимости в переключении тем *}
+    {* <link href="{THEME}/assets/bootstrap/4.5.3/css/bootstrap.css?001" rel="stylesheet" media="screen"> *}
+
+    {* Переключение цветовой схемы *}
+    <link href="{THEME}/assets/bootstrap/4.5.3/css/bootstrap.css" title="theme1" rel="stylesheet" media="screen">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/sketchy/bootstrap.min.css" title="theme2" rel="alternate stylesheet" type="text/css" media="screen" />
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cerulean/bootstrap.min.css" title="theme3" rel="alternate stylesheet" type="text/css" media="screen" />
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/materia/bootstrap.min.css" title="theme4" rel="alternate stylesheet" type="text/css" media="screen" />
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cerulean/bootstrap.min.css" title="theme5" rel="alternate stylesheet" type="text/css" media="screen" />
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css" title="theme6" rel="alternate stylesheet" type="text/css" media="screen" />
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/lux/bootstrap.min.css" title="theme7" rel="alternate stylesheet" type="text/css" media="screen" />
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cyborg/bootstrap.min.css" title="theme8" rel="alternate stylesheet" type="text/css" media="screen" />
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/flatly/bootstrap.min.css" title="theme9" rel="alternate stylesheet" type="text/css" media="screen" />
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/journal/bootstrap.min.css" title="theme10" rel="alternate stylesheet" type="text/css" media="screen" />
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/litera/bootstrap.min.css" title="theme11" rel="alternate stylesheet" type="text/css" media="screen" />
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/lumen/bootstrap.min.css" title="theme12" rel="alternate stylesheet" type="text/css" media="screen" />
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/minty/bootstrap.min.css" title="theme13" rel="alternate stylesheet" type="text/css" media="screen" />
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/pulse/bootstrap.min.css" title="theme14" rel="alternate stylesheet" type="text/css" media="screen" />
+
     {* DLE style *}
     <link href="{THEME}/css/engine.css" rel="stylesheet">
     <link href="{THEME}/css/style.css" rel="stylesheet">
-    <link href="{THEME}/css/custom.css?009" rel="stylesheet">
+    <link href="{THEME}/css/custom.css?012" rel="stylesheet">
 </head>
 
 <body class="bg-dark">
@@ -149,12 +168,18 @@
     {include file="custom/modal/loginmodal.tpl"}
     {* Модальное окно формы поиска на сайте *}
     {include file="custom/modal/searchmodal.tpl"}
+    {* Модальное окно выбора цветовой схемы *}
+    {include file="custom/modal/switchmodal.tpl"}
     
     {* Bootstrap JavaScript *} 
     {jsfiles} 
     {AJAX}
     <script defer src="{THEME}/assets/bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>   
     <script defer src="{THEME}/js/libs.js"></script>
+
+    {* Переключение цветовой схемы *}
+    <script src="{THEME}/assets/styleswitch/js/styleswitch.js" type="text/javascript"></script>
+
     {* Активация JS ПОСЛЕ библиотеки jQuery и код счетчиков, метрик и прочего *}
     {include file="js/javascript.tpl"}
 

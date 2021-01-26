@@ -10,7 +10,7 @@
 			<li class="list-group-item"><a href="{profile-link}"><i class="fa fa-male fa-fw"></i> Мой профиль ({login})</a></li>
 			<li class="list-group-item"><a href="{pm-link}"><i class="fa fa-envelope fa-fw"></i> ЛС ({new-pm} | {all-pm})</a></li>
 			<li class="list-group-item"><a href="{favorites-link}"><i class="fa fa-bookmark fa-fw"></i> Закладки ({favorite-count})</a></li>
-			<li class="list-group-item"><a href="{newposts-link}"><i class="fa fa-newspaper-o fa-fw"></i> Новое на сайте</a></li>
+			<li class="list-group-item"><a href="/lastnews"><i class="fas fa-newspaper fa-fw"></i> Новое на сайте</a></li>
 			<li class="list-group-item"><a href="{stats-link}"><i class="fa fa-info-circle fa-fw"></i> Статистика сайта</a></li>
 			<li class="list-group-item"><a class="thide lexit" href="{logout-link}"><i class="fa fa-power-off fa-fw"></i> Выход</a></li>
 		</ul>

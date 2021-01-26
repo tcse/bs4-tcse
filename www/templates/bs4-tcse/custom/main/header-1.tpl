@@ -47,6 +47,7 @@
                                 <i class="fa fa-user fa-fw"></i> {profile-login}
                             </a>
                             [/not-group]
+                            <a href="#" data-toggle="modal" data-target="#switchModal"><i class="fas fa-toggle-on"></i></a>
                         </div>
                     </div>
                 
