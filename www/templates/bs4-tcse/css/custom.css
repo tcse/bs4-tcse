@@ -69,22 +69,6 @@ a:hover {color: #fe0d01;}
     background-color: transparent; 
 }
 
-.list-group-item-secondary.list-group-item-action {
-    color: #383d41;
-    background-color: #f5f4f4;
-}
-.list-group-item {
-    border: 0px;
-}
-.list-group-flush>.list-group-item {
-    border-width: 0;
-}
-/*.border-secondary {
-    border-color: #646464!important;
-}*/
-.dropdown-item.active, .dropdown-item:active {
-background-color: #fe0d01;
-}
 
 /* ============================================================== */
 /* основной шаблон main.tpl */
@@ -340,13 +324,44 @@ background-color: #fe0d01;
     border-color: #636466!important;
 }
 
-.fz-15 {font-size: 15px;}
-@media (min-width: 1024px) and (max-width: 1300px) {
-    .fz-15 {font-size: 14px;}
+/* ============================================================== */
+/* Стилизуем картинки ролика */
+/* ============================================================== */
+/*.full-content > a.bla-1 img { 
+    border-radius: 15px;
+    box-shadow: 0 1px 6px rgba(0,0,0,.12),0 1px 6px rgba(0,0,0,.12);
+    width: 90vw;
+}*/
+/* вывод текстовой подсказки у ссылок с картинкой запуска ютубролика */
+/*.full-content > a.bla-1 img::after { 
+    content: 'чтобы просмотреть ролик, кликните на картинку'; 
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}*/
+/* вывод текстовой подсказки у ссылок запуска ютубролика */
+.full-content > a.bla-2::after { 
+    content: '(смотреть)'; 
+    display: inline;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left:  20px;
 }
-@media (min-width: 1367px) and (max-width: 1440px) {
-    .fz-15 {font-size: 16px;}
+/* ============================================================== */
+/* Накладываем иконку ролика на картинки с ютуба */
+/* ============================================================== */
+.ytpu-container {
+    position: relative;
 }
-@media (min-width: 1441px) {
-    .fz-15 {font-size: 17px;}
+.ytpu-container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: all 0.8s;
+  opacity: 0.8;
+  background: url(https://smartzone.ru/uloads/videoplay.png) center no-repeat;
+  background-size: auto;
 }

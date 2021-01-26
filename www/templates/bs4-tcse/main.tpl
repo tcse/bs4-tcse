@@ -5,36 +5,26 @@
     <!-- Сайт разработан в веб-студии tcse-csm.com -->
     {* mobile tags *}
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
-    <meta name="yandex-verification" content="4b35e6dd6e4e3f46" />
     <meta name="cmsmagazine" content="5ea1752cd4db9cd1f2c7cf09549d75f2" />
-    <meta name="yandex-verification" content="880a98a86b90f8b5" />
     {headers} 
     {* Favicons *}
     <link rel="shortcut icon" href="/favicon.ico">
     {* Favicons realfavicongenerator.net *}
-    <link rel="apple-touch-icon" sizes="180x180" href="{THEME}/images/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="{THEME}/images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="{THEME}/images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="{THEME}/images/favicons/site.webmanifest">
-    <link rel="mask-icon" href="{THEME}/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="{THEME}/images/favicons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#fe0d01">
-    <meta name="msapplication-config" content="{THEME}/images/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#fe0d01">
     {* Bootstrap *}
     <link href="{THEME}/assets/fonts/css/fontawesome-all.min.css" rel="stylesheet" type="text/css" >
     <link href="{THEME}/assets/bootstrap/4.5.3/css/bootstrap.css?001" rel="stylesheet" media="screen">
     {* DLE style *}
     <link href="{THEME}/css/engine.css" rel="stylesheet">
     <link href="{THEME}/css/style.css" rel="stylesheet">
-    <link href="{THEME}/css/custom.css?001" rel="stylesheet">
+    <link href="{THEME}/css/custom.css?009" rel="stylesheet">
 </head>
 
-<body class="bg-white">
+<body class="bg-dark">
 
 <div class="wrapper px-n4 px-md-4">
 
     <header>
+        {include file="custom/main/header-1.tpl"}
         {include file="custom/main/menu_header_auto.tpl"}
     </header>
 
@@ -42,13 +32,14 @@
         
 
         [aviable=main]
-            {include file="custom/main/section_main.tpl"}
+            {* {include file="custom/main/section_main.tpl"} *}
+            <div class="row">{content}</div>
         [/aviable]
 
         
 
         [aviable=showfull]
-            <div class="container-fuid">
+            <div class="container">
                 <div class="my-4 [not-desktop]px-3[/not-desktop]">
                     <img src="{THEME}/images/b_1260_175.jpg" alt="" class="img-fluid">
                 </div>
@@ -58,7 +49,7 @@
         {speedbar}
 
         [not-aviable=main|static]
-        <div class="container-fuid">
+        <div class="container">
             
             <div class="row [not-desktop]px-3[/not-desktop]">
 
@@ -131,6 +122,7 @@
     </main>
 
     <footer>
+        [aviable=static|main|showfull]
         <div class="d-none d-sm-block">
             <div class="text-center my-3">
                 <p>
@@ -140,9 +132,13 @@
                 </p>
             </div>
             <div class="collapse" id="collapseNavLinks">
-                {include file="custom/main/jplist-sort-dropdown-control.tpl"}
+                <div class="row mt-5">
+                    {catmenu id="1-50" subcat="yes" template="custom/categorymenu/card_item"}
+                </div>
+                <div class="clearfix"></div> 
             </div>
         </div>
+        [/aviable]
 
         {* Блок меню в подвале сайта *} 
         {include file="custom/main/menu_footer.tpl"}

@@ -1,14 +1,7 @@
 <div class="card border-0  mb-3">
     <a href="{full-link}" class="text-white">
         <div class="crop-box-h195 bg-light">
-        [xfgiven_image]
-            {* <img src="/resize?src=[xfvalue_image_url_image]&w=512&h=288&a=c" class="card-img-top rounded-0" alt=""> *}
-            <img src="[xfvalue_thumb_url_image]" class="card-img-top rounded-0" alt="">
-        [/xfgiven_image]
-
-        [xfnotgiven_image]
-            <img src="/resize?src={image-1}&w=512&h=288&a=c" class="card-img-top rounded-0" alt="">
-        [/xfnotgiven_image]
+            <img src="{image-1}" class="card-img-top rounded-0" alt="">
         </div> 
     </a>
     <div class="card-body mx-n4">

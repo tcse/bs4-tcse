@@ -1,12 +1,6 @@
 <div class="card bg-dark text-white w-100 mb-3 rounded-0 border-0">
 	<div class="img-gradient crop-box-h390">
-		[xfgiven_image]
-            <img src="/resize?src=[xfvalue_image_url_image]&w=300&h=390&a=c" class="card-img" alt="">
-        [/xfgiven_image]
-
-        [xfnotgiven_image]
-        	<img src="/resize?src={image-1}&w=300&h=390&a=c" class="card-img" alt="">
-		[/xfnotgiven_image]
+        	<img src="{image-1}" class="card-img" alt="">
 	</div>
 	<a href="{full-link}" class="stretched-link text-white">
 		

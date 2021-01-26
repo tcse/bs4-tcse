@@ -18,38 +18,21 @@
 				<li class="list-inline-item">
 				    <i class="fa fa-calendar fa-fw"></i> [day-news]{date=d.m.Y, H:i}[/day-news]
 				</li>
-				[xfgiven_auther]
 				<li class="list-inline-item">
-				    <i class="fa fa-user fa-fw" aria-hidden="true"></i> <span itemprop="name">[xfvalue_auther]</span>
+				    <i class="fa fa-user fa-fw" aria-hidden="true"></i> <span itemprop="name">{author}</span>
 				</li>
-				[/xfgiven_auther]
-				[group=1]
 				<li class="list-inline-item">
 				    <i class="fa fa-eye fa-fw"></i> {views}
 				</li>
-				[/group]
 				<li class="list-inline-item">
 				    [add-favorites]<i class="fa fa-bookmark-o fa-fw"></i>[/add-favorites]
 				    [del-favorites]<i class="fa fa-bookmark fa-fw"></i>[/del-favorites]
 				</li>
-				[group=1]
 				<li class="list-inline-item">
 				    [print-link]<i class="fa fa-print"></i>[/print-link]
 				</li>
-				[/group]
 			</ul>
 
-			[xfgiven_image]
-			<div class="crop-box-h390 bg-light mb-3">
-				{* [xfvalue_image] *}	            
-	            {* <img src="/resize?src=[xfvalue_image_url_image]&w=947&h=390&a=c" class="image-fluid" alt="{title}"> *}
-	            <img src="[xfvalue_image_url_image]" class="image-fluid" alt="{title}">
-	        </div>
-	        [/xfgiven_image]
-
-	        [xfgiven_photo]
-	        	<div class="text-center mt-n1 mb-3 small">Источник фото: [xfvalue_photo]</div>
-	        [/xfgiven_photo]
 	          	
 			<div class="full-content">
 				{full-story}
@@ -65,20 +48,6 @@
 			<div class="h5 text-uppercase mt-5">Другие новости раздела: {category-title}</div>
 			<div class="card-deck">
 				{custom category="{category-id}" idexclude="{news-id}" template="custom/shortstory/card-2" limit="3" from="0" order="date" sort="desc" cache="no"}
-			</div>
-		</div>
-	</section>
-
-	<div class="border-bottom border-secondary my-1 ml-n4"></div>
-
-	<section>
-		<div class="col-12 col-sm-12 col-md-12 col-lg-12">
-			<div class="h5 text-uppercase mt-5">Популярное в сети</div>
-			<div class="card-deck">
-				{custom category="1-20" idexclude="{news-id}" template="custom/shortstory/main-card-2"  days="90"  limit="3" from="0" order="read" sort="asc" cache="no"}
-			</div>
-			<div class="card-deck">
-				{custom category="1-20" idexclude="{news-id}" template="custom/shortstory/main-card-2"  days="90"  limit="3" from="3" order="read" sort="asc" cache="no"}
 			</div>
 		</div>
 	</section>

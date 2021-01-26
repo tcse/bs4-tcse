@@ -3,28 +3,12 @@
 		<div class="row">
 
 			<div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-				<div class="h4 text-uppercase text-center text-md-left">
-					<a href="/">
-						<img src="{THEME}/images/logo-footer.png" alt="logo moscow-news.online" class="img-fluid">
-					</a>
-				</div>
-				<div class="text-center text-md-left small mt-3">
-					<p>
-						Учредитель: ООО «Да»
-					</p>
-					<p>
-						<b>Главный редактор</b>:<br> Киктенко Анна Николаевна 
-					</p>
-					<address>
-						+7 (960) 243-05-35,<br>
-						<a href="mailto:mail@moscow-news.online">mail@moscow-news.online</a>
-					</address>
+				
 					<p>
 						<a href="/sitemap.html">Карта сайта</a> <a href="/sitemap.xml" title="XML sitemap"><i class="fa fa-sitemap"></i></a>
 					</p>
 
 					
-				</div>
 			</div>
 
 			<div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
@@ -95,11 +79,6 @@
 				</div>
 				
 			</div>
-
-			{* <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center p-3">
-
-			</div> *}
-
 		</div>
 	</div>
 </div>

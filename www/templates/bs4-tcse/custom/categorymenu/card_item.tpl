@@ -5,7 +5,7 @@
             <span class="desc">({news-count})</span> 
         </a> 
         <p class="card-text font-weight-light text-secondary font-12">
-            {custom category="{id}" template="custom/shortstory/list-item" available="global" from="0" limit="20" order="reads" sort="desc" cache="no"}
+            {custom category="{id}" template="custom/shortstory/list-item" available="global" from="0" limit="5" order="reads" sort="desc" cache="no"}
         </p>
     </div>
 [/item]
