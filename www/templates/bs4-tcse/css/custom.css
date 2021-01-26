@@ -2,7 +2,6 @@
 @font-face {font-family: Arial, "Times New Roman", sans-serif;}
 body {
     background-color: #ccc;
-    /*background-image: url(../images/fon_moscownews.jpg);*/
     background-repeat: no-repeat;
     background-position: top center;
     background-attachment: fixed;
