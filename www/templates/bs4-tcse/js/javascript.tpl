@@ -1,7 +1,7 @@
 
 [aviable=showfull]
   {* Подключаем плагин модальных окон с роликами YouTube *} 
-  <link rel="stylesheet" type="text/css" href="{THEME}/assets/youtubepopup/YouTubePopUp.css?001">
+  <link rel="stylesheet" type="text/css" href="{THEME}/assets/youtubepopup/YouTubePopUp.css?002">
   <script defer src="{THEME}/assets/youtubepopup/YouTubePopUp.jquery.js"></script>
   <script>
     jQuery(function(){
@@ -17,7 +17,7 @@
     $(".full-content > a.bla-1 img").wrap('<div class="ytpu-container"/>');
   </script>
 
-  {* Стилизуем Youtube проигрыватель *}
+  {* Стилизуем Youtube проигрыватель вставленный в новость через iframe *}
   <script>
       $(".full-content iframe").wrap('<div class="video-container"/>');
   </script>

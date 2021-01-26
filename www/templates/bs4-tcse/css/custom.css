@@ -1,5 +1,4 @@
 /* Template created by tcse-cms.com | Author: Vitaly V. Chuyakov | URL: http://tcse-cms.com */
-@font-face {font-family: Arial, "Times New Roman", sans-serif;}
 body {
     background-color: #ccc;
     background-repeat: no-repeat;
@@ -7,7 +6,6 @@ body {
     background-attachment: fixed;
     background-size: cover;
     letter-spacing: normal;
-    font-family: Arial, "Times New Roman", sans-serif;
 }
 .wrapper {
     background-color: #fff;
@@ -16,13 +14,12 @@ body {
     margin: 0 auto;
     max-width: 1360px;
 }
-a {color: #000;}
-a:hover {color: #fe0d01;}
+a {color: var(--danger);}
+a:hover {color: var(--color-black)}
 .a-text-secondary {font-size: 0.9em;}
-.a-text-secondary a {color: #646464;}
-.text-lightgrey a {color: #99999a;}
-.text-lightgrey {color: #99999a; font-size: 1.1em;}
-.font-12  {font-size: 14px;}
+.a-text-secondary a {color: var(--secondary);}
+.text-lightgrey a {color: var(--gray);}
+.text-lightgrey {color: var(--gray); font-size: 1.1em;}
 #dofullsearch {display: none;}
 /* ============================================================== */
 /* Переназначение стилей DLE */
@@ -107,7 +104,7 @@ a:hover {color: #fe0d01;}
     margin-right: 10px;
 }
 .full-content a {
-    color: #fe0d01;
+    color: var(--secondary);
     border-bottom: 1px dashed;
 }
 .block-rating {
@@ -327,13 +324,6 @@ a:hover {color: #fe0d01;}
 /* ============================================================== */
 /* Стилизуем картинки ролика */
 /* ============================================================== */
-/* вывод текстовой подсказки у ссылок с картинкой запуска ютубролика */
-/*.full-content > a.bla-1 img::after { 
-    content: 'чтобы просмотреть ролик, кликните на картинку'; 
-    display: block;
-    text-align: center;
-    margin-bottom: 20px;
-}*/
 /* вывод текстовой подсказки у ссылок запуска ютубролика */
 .full-content > a.bla-2::after { 
     content: '(смотреть)'; 

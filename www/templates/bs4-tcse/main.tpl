@@ -35,7 +35,7 @@
     {* DLE style *}
     <link href="{THEME}/css/engine.css" rel="stylesheet">
     <link href="{THEME}/css/style.css" rel="stylesheet">
-    <link href="{THEME}/css/custom.css?012" rel="stylesheet">
+    <link href="{THEME}/css/custom.css?015" rel="stylesheet">
 </head>
 
 <body class="bg-dark">
