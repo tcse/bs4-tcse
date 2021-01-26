@@ -4,11 +4,11 @@
 	</div>
 	<a href="{full-link}" class="stretched-link text-white">
 		
-	    <div class="card-img-overlay-top">
+	    {* <div class="card-img-overlay-top">
 	    	<div class="text-uppercase bg-danger p-3">
 	    		лучшее за месяц
 	    	</div>
-	    </div>
+	    </div> *}
 	    
 	    <div class="card-img-overlay-bottom">
 	        <p class="card-text text-uppercase small">{category} [group=1]<i class="fa fa-eye fa-fw"></i> {views}[/group]</p>

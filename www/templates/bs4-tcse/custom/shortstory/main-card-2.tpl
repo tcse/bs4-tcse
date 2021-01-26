@@ -6,8 +6,7 @@
     </a>
     <div class="card-body mx-n4">
         <p class="card-text text-uppercase text-secondary small">
-            {category} [group=1]<i class="fa fa-eye fa-fw"></i> {views}[/group] 
-                <span data-afs-id="{news-id}" data-toggle="tooltip" data-placement="top" title="Быстрый просмотр"><i class="far fa-newspaper"></i></span>
+            {category} <i class="fa fa-eye fa-fw"></i> {views}
             </p>
         <h5 class="card-title mt-n3">
             <a href="{full-link}">{title}</a> 
