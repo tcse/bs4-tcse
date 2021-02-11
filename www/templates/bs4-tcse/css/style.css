@@ -223,3 +223,34 @@ table.mobile-table td {padding: 0.6rem 1rem; border-bottom: 1px solid var(--gray
     right: -30px; // правая стрелка переместилась справа от слайдера
 }
 
+/* ============================================================== */
+/* Дерево комментариев */
+/* ============================================================== */
+ol.comments-tree-list {
+    list-style: none;
+    margin-left: -40px;
+}
+li.comments-tree-item ol.comments-tree-list:nth-child(even) {
+    margin-left: -10px;
+}
+li.comments-tree-item ol.comments-tree-list:nth-child(odd) {
+    margin-left: -10px;
+}
+li.comments-tree-item ol.comments-tree-list:nth-child(1) {
+    margin-left: 0px;
+}
+@media (min-width: 240px) and (max-width: 576px) {
+    ol.comments-tree-list {
+        margin-left: -40px;
+    }
+    li.comments-tree-item ol.comments-tree-list:nth-child(even) {
+        margin-left: -40px;
+    }
+    li.comments-tree-item ol.comments-tree-list:nth-child(odd) {
+        margin-left: -40px;
+    }
+    li.comments-tree-item ol.comments-tree-list:nth-child(1) {
+        margin-left: -40px;
+    }
+}
+
